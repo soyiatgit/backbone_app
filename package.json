@@ -1,0 +1,17 @@
+{
+  "name": "backbone_user_roll_app",
+  "version": "1.0.0",
+  "description": "Simple app to learn Backbone",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Saurabh Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.4"
+  }
+}

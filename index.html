@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Backbone based User Roll App </title>
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap.css"/> 
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+<script src="vendor/jquery.js"></script>
+<script src="vendor/underscore.js"></script>
+<script src="vendor/backbone.js"></script>
+<script src="Models/userModel.js"></script>
+<script src="Collections/userCollection.js"></script>
+<script src="Views/userView.js"></script>
+<script src="Views/userListView.js"></script>
+<script type="text/template" id="userTemplate">
+	<td><span class="name"><%=name%></span></td>
+	<td><span class="exp"><%=age%></span></td>
+	<td><span class="age"><%=exp%></span></td>
+	<td><span class="project"><%=project%></span></td>
+	<td><span><button class="btn btn-warning edit-button margin-left-5">Edit</button> <button class="btn btn-danger del-button">Delete</button>
+	<button class="btn btn-success update-button margin-left-5">Update</button> <button class="btn btn-danger cancel-button">Cancel</button>
+	</span></td>
+</script>
+<script src="server.js"></script>
+<script src="app.js"></script>
+
+</head>
+<body>
+<div class="main-container">
+<h1> Backbone based User Roll App </h1>
+	<table class="table table-striped">
+		<thead>
+		  <tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Exp</th>
+			<th>Project</th>
+			<th class="margin-left-5">Action</th>
+		  </tr>
+		</thead>
+		<tr>
+			<td><input type="text" class="form-control" id="name-input" placeholder="Name"></td>
+			<td><input type="text" class="form-control"id="age-input" placeholder="Age"></td>
+			<td><input type="text" class="form-control"id="exp-input" placeholder="Experience"></td>
+			<td><input type="text" class="form-control" id="project-input" placeholder="Project"></td>
+			<td><input type="button" id="add-user" value="Add" class="btn btn-primary margin-left-5"></td>
+		</tr>
+		<tbody id="table-body" class="table-body">
+		</tbody>
+	</table>
+</div>
+</body>
+
+</html>
